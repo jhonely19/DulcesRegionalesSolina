@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+$mensaje = '';
+
+if(isset($_SESSION['error'])){
+    $mensaje = $_SESSION['error'];
+    unset($_SESSION['error']); // importante para que no se repita
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,9 +20,8 @@
     <meta name="description" content="dulces regionales">
     <meta name="keywords" content="dulces, regionales">
 
-    <link rel="icon" href="../imagenes/logo1.png">
+    <link rel="icon" href="../imagenes/logotipo.png">
     <link rel="stylesheet" href="../assetes/css/login.css">
-
     <title>Login - Doña Solina</title>
 
     <!-- GOOGLE FONTS -->
@@ -25,55 +36,45 @@
 <div class="contenedor">
 
     <!-- PANEL IZQUIERDO -->
-
     <div class="izquierda">
-
         <div class="contenido">
-
             <h1>Doña Solina</h1>
-
             <h2>DULCES REGIONALES</h2>
-
             <p>
                 Tradición que endulza,<br>
                 calidad que encanta.
             </p>
 
             <div class="info">
-
                 <div>
                     <i class="fa-solid fa-heart"></i>
                     <span>Hecho con amor</span>
                 </div>
-
                 <div>
                     <i class="fa-solid fa-award"></i>
                     <span>Calidad garantizada</span>
                 </div>
-
                 <div>
                     <i class="fa-solid fa-leaf"></i>
                     <span>Productos regionales</span>
                 </div>
-
             </div>
-
         </div>
 
     </div>
-
     <!-- PANEL DERECHO -->
-
     <div class="derecha">
 
-        <form action="../controller/LoginController.php" method="POST" class="formulario">
+        <form action="../controller/LoginController.php" method="POST">
 
             <h2>¡Bienvenida!</h2>
-
             <p>Inicia sesión para continuar</p>
-
+            <?php if($mensaje != ''): ?>
+    <div style="color:red; font-weight:bold; margin-bottom:10px;">
+        <?php echo $mensaje; ?>
+    </div>
+<?php endif; ?>
             <div class="input-group">
-
                 <i class="fa-solid fa-envelope"></i>
 
                 <input 
@@ -82,33 +83,25 @@
                     placeholder="Correo electrónico"
                     required
                 >
-
             </div>
 
             <div class="input-group">
 
                 <i class="fa-solid fa-lock"></i>
-
                 <input 
                     type="password" 
                     name="contrasena" 
                     placeholder="Contraseña"
                     required
                 >
-
             </div>
-
             <div class="extras">
-
                 <label>
                     <input type="checkbox">
                     Recordarme
                 </label>
-
                 <a href="#">¿Olvidaste tu contraseña?</a>
-
             </div>
-
             <button type="submit">
 
                 <i class="fa-solid fa-right-to-bracket"></i>
@@ -122,9 +115,7 @@
             </div>
 
         </form>
-
     </div>
-
 </div>
 
 </body>
