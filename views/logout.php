@@ -1,13 +1,9 @@
 <?php
 session_start();
-
-// borrar todas las variables de sesión
 session_unset();
-
-// destruir la sesión
 session_destroy();
 
-// redirigir al login
-header('Location: ../views/login.php');
+// Redirigir al login que está en la misma carpeta
+header("Location: login.php");
 exit;
 ?>
