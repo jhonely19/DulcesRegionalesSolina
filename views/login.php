@@ -1,14 +1,11 @@
 <?php
 session_start();
-
 $mensaje = '';
-
-if(isset($_SESSION['error'])){
+if (isset($_SESSION['error'])) {
     $mensaje = $_SESSION['error'];
-    unset($_SESSION['error']); // importante para que no se repita
+    unset($_SESSION['error']); 
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="es">

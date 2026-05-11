@@ -2,8 +2,7 @@
 session_start();
 session_unset();
 session_destroy();
-
-// Redirigir al login que está en la misma carpeta
-header("Location: login.php");
-exit;
+// Volvemos al index de la raíz
+header('Location: ../index.php');
+exit();
 ?>

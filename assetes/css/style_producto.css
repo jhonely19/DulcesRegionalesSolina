@@ -1,0 +1,124 @@
+body {
+    background-color: #fdf2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Botón Regresar */
+.btn-regresar {
+    color: #a64d79;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-regresar:hover {
+    color: #f06292;
+    transform: translateX(-5px);
+}
+
+.titulo-pagina {
+    color: #880e4f;
+    font-weight: 700;
+}
+
+/* Tarjetas */
+.card-solina {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(166, 77, 121, 0.1);
+    background: white;
+    overflow: hidden;
+}
+
+.header-solina {
+    background: linear-gradient(135deg, #a64d79 0%, #d5a6bd 100%);
+    color: white;
+    padding: 18px 25px;
+}
+
+/* Formulario */
+.form-label {
+    color: #a64d79;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.form-control {
+    border-radius: 12px;
+    border: 2px solid #f8bbd044;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #f06292;
+    box-shadow: 0 0 0 0.25rem rgba(240, 98, 146, 0.1);
+}
+
+.btn-pink {
+    background: linear-gradient(to right, #f06292, #ec407a);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+/* Tabla y Colores */
+.table-pink thead {
+    background-color: #fce4ec;
+    color: #880e4f;
+}
+
+.table-pink th {
+    border: none;
+    padding: 15px;
+    font-size: 0.85rem;
+}
+
+.badge-categoria {
+    background-color: #e1f5fe;
+    color: #0288d1;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-weight: 500;
+}
+
+.stock-ok {
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.stock-alerta {
+    color: #c62828;
+    background: #ffebee;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Botones de Acción */
+.btn-outline-warning {
+    color: #f9a825;
+    border-color: #f9a825;
+}
+
+.btn-outline-warning:hover {
+    background-color: #f9a825;
+    color: white;
+}
+
+.btn-outline-danger {
+    color: #e53935;
+    border-color: #e53935;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e53935;
+    color: white;
+}
