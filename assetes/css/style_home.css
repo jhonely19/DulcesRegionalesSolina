@@ -69,6 +69,16 @@ header.topbar {
     border-radius: 30px; 
     border: 2px solid #ffd6e8; 
 }
+.search-box button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.search-box input:focus {
+    outline: none;
+}
 .search-box input { border: none; outline: none; font-size: 20px; width: 140px; color: #7d5a6a; }
 .btn-salir { 
     text-decoration: none; 

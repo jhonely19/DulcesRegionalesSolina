@@ -11,6 +11,7 @@ $usuarios = $datos ?? []; // Viene del controlador
 <head>
     <meta charset="UTF-8">
     <title>Usuarios | Doña Solina</title>
+    <link rel="icon" href="../imagenes/logotipo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assetes/css/style_home.css">
     <link rel="stylesheet" href="../assetes/css/style_producto.css">

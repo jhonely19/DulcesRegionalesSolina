@@ -3,14 +3,14 @@
         <img src="../imagenes/inicio.png" class="side-icon" alt="Inicio"> Inicio
     </a>
     
-    <!-- Se recomienda mantener un estándar: si usas ?a=listar en uno, úsalo en todos o en ninguno -->
-
     <a href="../controller/UsuarioController.php">
-    <img src="../imagenes/usuario.png" class="side-icon" alt="Usuarios"> Usuarios
+        <img src="../imagenes/usuario.png" class="side-icon" alt="Usuarios"> Usuarios
     </a>
+
     <a href="../controller/ClienteController.php?a=listar">
         <img src="../imagenes/clientes.png" class="side-icon" alt="Clientes"> Clientes
     </a>
+    
     
     <a href="../controller/ProductoController.php">
         <img src="../imagenes/producto.png" class="side-icon" alt="Productos"> Productos

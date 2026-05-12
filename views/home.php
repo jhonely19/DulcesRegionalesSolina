@@ -33,8 +33,16 @@ $usuario = $_SESSION['usuario'];
 
         <main class="content">
             <div class="main-body">
-                <h1>Bienvenidos</h1>
-                <p>“La dulzura de nuestra tradición está en cada producto hecho con amor y calidad.”</p>
+                <?php $q = trim($_GET['q'] ?? ''); ?>
+                <h1><?= $q !== '' ? 'Resultados de búsqueda' : 'Bienvenidos' ?></h1>
+                <p>
+                    <?= $q !== '' ? ('Buscando: ' . htmlspecialchars($q)) : '“La dulzura de nuestra tradición está en cada producto hecho con amor y calidad.”' ?>
+                </p>
+
+                <?php if ($q !== ''): ?>
+                    <div class="alert alert-info" style="max-width: 700px;">Por ahora la búsqueda se muestra en pantalla. Si quieres búsqueda real en productos/clientes, se implementa consultando la BD.</div>
+                <?php endif; ?>
+
                 <img src="../imagenes/img.png" class="main-img" alt="Dulces Regionales">
             </div>
 

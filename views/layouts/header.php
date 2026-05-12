@@ -13,8 +13,10 @@
 
     <div class="user-area">
         <div class="search-box">
-            <input type="text" placeholder="Buscar...">
-            <button>🔍</button>
+            <form class="search-form" action="../views/home.php" method="GET">
+                <input type="text" name="q" placeholder="Buscar..." value="">
+                <button type="submit">🔍</button>
+            </form>
         </div>
         <span class="user-name">Hola, <strong><?php echo htmlspecialchars($_SESSION['usuario'] ?? 'Usuario'); ?></strong></span>
         <a href="../views/logout.php" class="btn-salir">Salir</a>
