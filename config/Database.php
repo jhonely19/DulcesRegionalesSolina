@@ -19,7 +19,13 @@ class Database {
                 PDO::ATTR_EMULATE_PREPARES => false
             ]);
         } catch (PDOException $e) {
-            die('Error de conexion a la base de datos: ' . $e->getMessage());
+            // Mostrar error exacto para depuración
+            $msg = 'Error de conexion a la base de datos: ' . $e->getMessage();
+            if (php_sapi_name() !== 'cli') {
+                header('Content-Type: text/plain; charset=utf-8');
+                die($msg);
+            }
+            die($msg);
         }
     }
 }

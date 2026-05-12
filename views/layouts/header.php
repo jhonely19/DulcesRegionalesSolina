@@ -6,9 +6,9 @@
 
   <nav class="top-menu">
     <a href="../views/home.php">Inicio</a>
-    <a href="../views/clientes.php">Clientes</a>
+    <a href="../controller/ClienteController.php?a=listar">Clientes</a>
     <a href="../controller/ProductoController.php">Productos</a>
-    <a href="../views/pedidos.php">Pedidos</a>
+    <a href="../controller/PedidoController.php">Pedidos</a>
 </nav>
 
     <div class="user-area">
