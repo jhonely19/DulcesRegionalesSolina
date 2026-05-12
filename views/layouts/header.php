@@ -16,7 +16,7 @@
             <input type="text" placeholder="Buscar...">
             <button>🔍</button>
         </div>
-        <span class="user-name">Hola, <strong><?php echo htmlspecialchars($usuario); ?></strong></span>
+        <span class="user-name">Hola, <strong><?php echo htmlspecialchars($_SESSION['usuario'] ?? 'Usuario'); ?></strong></span>
         <a href="../views/logout.php" class="btn-salir">Salir</a>
     </div>
 </header>

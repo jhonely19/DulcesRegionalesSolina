@@ -4,6 +4,10 @@
     </a>
     
     <!-- Se recomienda mantener un estándar: si usas ?a=listar en uno, úsalo en todos o en ninguno -->
+
+    <a href="../controller/UsuarioController.php">
+    <img src="../imagenes/usuario.png" class="side-icon" alt="Usuarios"> Usuarios
+    </a>
     <a href="../controller/ClienteController.php?a=listar">
         <img src="../imagenes/clientes.png" class="side-icon" alt="Clientes"> Clientes
     </a>
@@ -16,4 +20,6 @@
     <a href="../controller/PedidoController.php">
         <img src="../imagenes/pedido.png" class="side-icon" alt="Pedidos"> Pedidos
     </a>
+
+
 </aside>
